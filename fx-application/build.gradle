@@ -10,19 +10,17 @@ plugins {
     // Apply the java plugin to add support for Java
     id 'java'
 
+    // Apply the eclipse plugin
+    id 'eclipse'
+
     // Apply the application plugin to add support for building an application
     id 'application'
-
-    // Apply the eclipse plugin to add support for eclipse project
-    id 'eclipse'
 }
 
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
-    mavenLocal()
-    mavenCentral()
 }
 
 dependencies {
@@ -32,4 +30,4 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName = 'com.jaliansystems.javadriver.examples.swing.ut.LoginDialog'
+mainClassName = 'com.jaliansystems.javadriver.examples.fx.ut.LoginStage'
